@@ -9,54 +9,48 @@
       box-sizing: border-box;
     }
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Vazirmatn', sans-serif;
-      overflow: hidden;
-    }
-
     body {
-      background: url('https://raw.githubusercontent.com/Zahra-SaHa/my-video-project2/main/background.jpg') no-repeat center center;
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background: url('https://zahra-saha.github.io/my-video-project2/background.jpg') no-repeat center center fixed;
       background-size: cover;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
+      justify-content: center;
+      align-items: flex-end; /* برای اینکه کادر پایین باشه */
+      height: 100vh;
+      padding: 0 20px 60px; /* از پایین فاصله بگیریم */
       color: #fff;
     }
 
     .container {
       background: rgba(0, 0, 0, 0.5);
-      padding: 24px 16px;
+      padding: 30px 20px;
       border-radius: 30px;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
       text-align: center;
-      width: 90%;
-      max-width: 420px;
+      max-width: 400px;
+      width: 100%;
       backdrop-filter: blur(10px);
-      margin-bottom: 40px;
     }
 
     h1 {
-      margin: 0 0 16px;
-      font-size: 24px;
+      margin-bottom: 20px;
+      font-size: 26px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
     .button {
       display: inline-block;
-      background: linear-gradient(135deg, #ccf7fe, #a8e8f0);
+      background: linear-gradient(135deg, #7bcef7, #5dbde6);
       color: #000;
       padding: 14px 28px;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: bold;
       border: none;
       border-radius: 50px;
       text-decoration: none;
       cursor: pointer;
-      box-shadow: 0 8px 15px rgba(204, 247, 254, 0.6);
+      box-shadow: 0 8px 15px rgba(123, 206, 247, 0.6);
       transition: all 0.3s ease;
       position: relative;
     }
@@ -70,8 +64,8 @@
     }
 
     .button:hover {
-      background: linear-gradient(135deg, #a8e8f0, #ccf7fe);
-      box-shadow: 0 12px 25px rgba(204, 247, 254, 0.8);
+      background: linear-gradient(135deg, #5dbde6, #7bcef7);
+      box-shadow: 0 12px 25px rgba(123, 206, 247, 0.8);
       transform: scale(1.05);
     }
 
@@ -81,12 +75,15 @@
     }
 
     @media (max-width: 500px) {
-      h1 {
-        font-size: 20px;
+      .container {
+        max-width: 95%;
+        padding: 25px 15px;
       }
-
+      h1 {
+        font-size: 22px;
+      }
       .button {
-        font-size: 16px;
+        font-size: 18px;
         padding: 12px 24px;
       }
     }
